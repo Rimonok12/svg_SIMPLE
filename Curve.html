@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous" />
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Curve</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
+
+    <title>Document</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light" style="
+        background: linear-gradient(
+            217deg,
+            rgba(252, 252, 252, 0.8),
+            rgba(0, 0, 0, 0) 70.71%
+          ),
+          linear-gradient(
+            127deg,
+            rgba(229, 225, 230, 0.8),
+            rgba(238, 238, 238, 0) 70.71%
+          );
+      ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html">SVG</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./index.html">Home</a
+              >
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarScrollingDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Select SVG
+              </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                            <li>
+                                <a href="./Curve.html" class="dropdown-item">Curve</a>
+                            </li>
+                            <li><a class="dropdown-item" href="./Happy.html">Happy</a></li>
+                            <li>
+                                <hr class="dropdown-divider" />
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                    <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <svg id="Curve" width="429" height="235" viewBox="0 0 429 235" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path
+        id="signature"
+        d="M85 11C78.4278 -6.89102 58.1738 4.92815 49 14C26.7087 36.0436 12.5692 60.7707 7.00001 91.7778C3.75227 109.86 2.00001 127.19 2.00001 145.556C2.00001 158.268 0.755677 171.625 5.22223 183.778C10.6042 198.422 17.6485 214.813 32.4445 222C45.6855 228.431 68.5622 230.442 81 221.778C98.0276 209.916 108.605 195.489 113 175.222C114.561 168.023 114.379 160.451 112 153.444C110.41 148.763 108.04 148.733 106.222 153.444C99.7272 170.283 101.555 185.637 107.778 202C112.357 214.041 117.984 217.987 129.778 221.778C143.324 226.132 155.341 208.658 158.778 198.222C161.998 188.443 163.44 171.742 158 162.222C155.952 158.639 156.489 164.11 156.222 166.444C155.39 173.727 155.91 181.457 156 188.778C156.285 211.901 181.948 219.729 199 207C212.194 197.151 213.64 178.314 211.778 163C211.313 159.178 206.701 142.308 200.5 147.556C192.783 154.086 193.511 165.801 200.056 173C208.213 181.973 224.579 187.136 236.5 184.444C243.16 182.941 244.622 178.598 246.444 172.611C247.369 169.575 246.755 168.057 243.389 169.667C232.102 175.065 230 191.233 230 202C230 216.392 234.779 222.447 249.611 221.944C261.657 221.536 271.312 220.353 280.889 212.5C290.326 204.761 294.297 194.14 292.333 182C290.876 172.991 285.867 164.029 280.056 157.056C279.622 156.535 274.891 149.01 274.5 149.167C271.069 150.539 298.841 194.52 301.389 198.389C304.371 202.917 308.685 207.492 310.944 212.389C313.418 217.748 314.651 209.073 315.556 206.833C319.624 196.758 321.525 186.126 325.056 175.889C329.061 164.272 333.381 152.63 337.944 141.222C339.15 138.208 339.426 132.687 342.5 136.444C344.537 138.934 347.48 140.583 350.556 141.444C360.497 144.228 371.195 145.21 381.389 142.944C393.849 140.176 390.254 123.165 379.444 120.556C359.005 115.622 349.563 142.343 343 157.111C336.629 171.446 333.565 185.834 332.5 201.389C332.001 208.68 330.55 222.036 337.667 226.944C349.308 234.973 370.384 233.258 382.611 228.444C401.516 221.001 416.603 204.619 426 187"
+        stroke="black"
+        stroke-width="3"
+        stroke-linecap="square"
+      />
+    </svg>
+</body>
+
+</html>
